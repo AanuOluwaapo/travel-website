@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --black-color: #262626;
+  --mid-black: #595959;
+  --light-black: #737373;
+  --white-color: #FFFFFF;
+  --green-like: #25A59E;
+}
+button {
+  padding: 12px 18px;
+  border: none;
+  background-color: var(--green-like);
+  color: var(--white-color);
+}
+h1 {
+  font-family: 'Gilda Display';
+  font-size: 3.2em;
+  font-weight: 100;
+}
+h2 {
+  font-family: 'Gilda Display';
+  font-size: 2.5em;
+  color: var(--black-color);
+  font-weight: 300;
+}
+h3 {
+  font-family: 'Gilda Display';
+  font-size: 2em;
+  color: var(--black-color);
+}
+p {
+  font-family: 'Urbanist';
+  font-size: 1.0em;
+  color: var(--mid-black);
+}
+li {
+  font-family: 'Urbanist';
+  font-size: 1.0em;
+  font-weight: bold;
+  color: var(--mid-black);
+}
+span {
+  color: var(--green-like);
+}
+.logo {
+  font-family: 'Gilda Display';
+  font-size: 1.2em;
+  color: var(--green-like);
+  font-weight: bold;
+}
+.place {
+  font-size: 1.5em;
+  color: var(--black-color);
+  padding-top: 20px;
+}
+.location-name {
+  font-weight: bold;
+  padding-top: 20px;
+}
+.details-special {
+  font-family: 'Gilda Display';
+  font-size: 1em;
+  color: var(--white-color);
+  font-weight: 700;
+}
+.choose-us {
+  font-weight: 550;
+}
+.four, footer, nav {
+  margin: 20px;
+}
+/*nav { (at this point, I realized that I can replace display-flex with Grid)
+  display: flex;
+  justify-content: space-between;
+}*/
+.one {
+  text-align: center;
+  position: relative;
+}
+h1 {
+  clear: left;
+  position: relative;
+  top: 120px;
+}
+.ellipse {
+  position: absolute;
+  bottom: .1em;
+  left: 1.9em;
+}
+.hero-img {
+  position: absolute;
+  bottom: .2em;
+  left: 1em;
+}
+.right {
+  position: relative;
+}
+.travellers {
+  position: absolute;
+  bottom: 200px;
+}
+.Two {
+  background-color: #f7f6f6;
+}
+.Two h2 {
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+.Two p {
+  padding-bottom: 20px;
+}
+.location {
+  display: flex;
+  gap: 15px;
+  position: relative;
+  bottom: 25px;
+}
+.Three {
+  padding-top: 60px;
+  background-color: #f7f6f6;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.Three h2, .choose-us {
+  text-align: center;
+}
+.Three h2 {
+  padding-bottom: 25px;
+}
+.Three p {
+  padding-bottom: 40px;
+}
+.Three .choose-us{
+  color: var(--light-black);
+}
+.guide {
+  border-top: solid;
+  border-color: var(--green-like);
+  border-width: 5px;
+  background-color: var(--white-color);
+  margin: 0px, 10px;
+}
+.guide h3, p {
+  padding-left: 10px;
+}
+.guide h3 {
+  padding-top: 20px;
+}
+.guide .describe {
+  color: #595959;
+  padding-top: 10px;
+}
+.ready {
+  border-top: solid;
+  border-color: var(--green-like);
+  border-width: 5px;
+  background-color: var(--white-color);
+  margin: 0px, 10px;
+}
+.ready h3, p {
+  padding-left: 10px;
+}
+.ready h3 {
+  padding-top: 20px;
+}
+.ready .describe {
+  color: #595959;
+  padding-top: 10px;
+}
+.details {
+  font-family: 'Gilda Display';
+  font-size: 1em;
+  color: var(--green-like);
+  font-weight: 700;
+}
+.ticket {
+  border-top: solid;
+  border-color: var(--green-like);
+  border-width: 5px;
+  background-color: var(--green-like);
+  margin: 0px, 10px;
+}
+.ticket h3 {
+  padding-top: 20px;
+}
+.ticket h3, .ticket-d {
+  padding-left: 10px;
+  color: var(--white-color);
+  padding-top: 10px;
+}
+.detailing {
+  display: flex;
+  gap: 20px;
+}
+.four {
+  margin: 20px;
+}
+.left h3{
+  margin-top: 50px;
+  text-align: left;
+  padding-left: 10px;
+}
+.left p{
+  margin-top: 15px;
+  text-align: left;
+}
+.five h2{
+  text-align: center;
+  padding-top: 20px;
+}
+/*Mobile-First*/
+.grid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.logo-image {
+  grid-column: 12;
+}
+.travel-places {
+  grid-column: 1/13;
+  margin-top: 20px;
+  /*gap: 10px;*/
+  background-color: var(--white-color);
+  padding: 20px;
+}
+#tour-text {
+  background-color: var(--white-color);
+  padding: 20px;
+}
+.describe-it {
+  grid-column: 1/13;
+  margin-top: 20px;
+  padding: 10px;
+}
+.location-icon {
+  width: 2em;
+  height: 2.5em;
+  margin-top: 1em;
+}
+.arrow {
+  grid-column: 11/13;
+}
+.details {
+  grid-column: 6/11;
+}
+.details-special {
+  grid-column: 6/11;
+}
+.traveller-grid {
+  grid-column: 1/13;
+}
+.right {
+  top: 150px;
+  padding-bottom: 200px;
+}
+.offer {
+  grid-column: 1/13;
+  padding-bottom: 15px;
+}
+button {
+  grid-column: 1/5;
+}
+.choose-us {
+  padding: 10px 0;
+  text-align: left;
+}
+video{
+  width: 28em;
+  height: 20em;
+}
+.instagram {
+  grid-column: 4/6;
+}
+.x {
+  grid-column: 6/8;
+}
+.youtube {
+  grid-column: 8/10;
+}
+.socials {
+  padding: 10px 0;
+  display: flex;
+}
+.foot-align {
+  gap: 20px;
+}
+.more-info {
+  grid-row: 3;
+}
+ul {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-logo {
+  padding-top: 60px;
+}
+
+/*Small tablet Size*/
+@media screen and (min-width: 620px) {
+  .ellipse{
+    width: 35em;
+  }
+  .hero-img {
+    width: 35em;
+  }
+  .logo {
+    font-size: 1.5em;
+  }
+  h1 {
+    font-size: 5.2em;
+  }
+  h2 {
+    font-size: 3.5em;
+  }
+  h3 {
+    font-size: 3em;
+  }
+  p {
+    font-size: 1.8em;
+  }
+  button {
+    font-size: 1.8em;
+  }
+  li {
+    font-size: 1.8em;
+  }
+  .location-icon {
+    width: 2em;
+    height: 2.5em;
+    margin-top: 1em;
+  }
+  video {
+    width: 100%;
+    max-width: 72em;
+    height: auto
+  }
+  .details{
+    font-size: 1.8em;
+  }
+  .details-special {
+    font-size: 1.8em;
+  }
+  .arrow {
+    width: 1.8em;
+  }
+  }
+  /*Desktop View*/
+  @media screen and (min-width: 1200px) {
+    .ellipse{
+      width: 80em;
+    }
+    .hero-img {
+      width: 80em;
+    }
+    .logo {
+      font-size: 1.5em;
+    }
+    h1 {
+      font-size: 9.5em;
+    }
+    h2 {
+      font-size: 4em;
+    }
+    h3 {
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    .details {
+      font-size: 1.2em;
+    }
+    .details-special {
+      font-size: 1.2em;
+    }
+    .arrow {
+      width: 1.5em;
+    }
+    .Two h2 {
+      text-align: center;
+    }
+    #tour-text p{
+      text-align: center;
+    }
+    button {
+      font-size: 1.8em;
+    }
+    li {
+      font-size: 1.2em;
+    }
+    .travel-places {
+      grid-column: span 4;
+    }
+    #tour {
+      margin-right: 50px;
+      margin-left: 50px;
+      gap: 30px;
+    }
+    .choose-us {
+      text-align: center;
+    }
+    .describe-it {
+      grid-column: span 4;
+    }
+    .third {
+      gap: 30px;
+      margin: 40px;
+    }
+    .location-icon {
+      width: 2em;
+      height: 2.5em;
+      margin-top: 1em;
+    }
+    .left {
+      grid-column: 1/8;
+    }
+    .right {
+      grid-column: 8/13 ;
+    }
+    .fourth {
+      margin: 0 40px;
+      align-items: center;
+    }
+    .five h2 {
+      padding: 30px;
+    }
+    video {
+      max-width: 85em;
+    }
+    .four {
+      margin: 40px 0;
+    }
+    .offer {
+      grid-column: 1/9;
+    }
+    button {
+      grid-column: 11/13;
+    }
+    .footer-offer {
+      margin: 40px 0;
+    }
+    footer {
+      padding: 40px;
+    }
+    .socials {
+      display: flex;
+    }
+    .travel-agent {
+      text-align: left;
+    }
+    ul {
+      display: flex;
+      align-items: end;
+      align-content: flex-end;
+      justify-content: space-between;
+    }
+    .more-info {
+      grid-column: 9/13;
+      grid-row: 1;
+    }
+  }
