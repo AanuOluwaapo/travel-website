@@ -16,7 +16,7 @@ This project is a website project aimed at having a beautiful website for a trav
 This project is a website project aimed at having a beautiful website for a travel agency. The images, choice of color and font are carefully chosen so that they can be attractive enough to captivate travellers. The website is made responsive so that travellers who visit the website can navigate the platform well without any hassle.
 
 ## LIVE DEMO 
-You can look up my travel website on Here is the link:
+You can look up my travel website on render.com Here is the link: https://travel-website-update.onrender.com
 
 ## SECTIONS
 My website has a header, four sections and one footer. The essence of this careful segmentation is to help travellers locate easily whatever aspects interest them.
@@ -32,6 +32,9 @@ There is no special setup and installation. Once you search for the website onli
 
 ## SCREENSHOT
 Here are some pictures of a part of my code. 
+![HTML](https://github.com/user-attachments/assets/5b0da116-9224-41af-8925-63b7ca00ca0c)
+![CSS](https://github.com/user-attachments/assets/9b373d26-f318-4c26-bcaf-6ced8190376d)
+![README](https://github.com/user-attachments/assets/04c49be3-6c55-4491-9fab-6c3e14ff6b52)
 
 
 ## LICENSE
